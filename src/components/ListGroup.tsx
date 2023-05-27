@@ -23,7 +23,7 @@ function ListGroup({ items, heading }: ListGroupProps) {
   const [name, setName] = useState("");
 
   return (
-    <Fragment>
+    <>
       <h1>{heading}</h1>
       {getMessage()}
       <ul className="list-group">
@@ -33,7 +33,7 @@ function ListGroup({ items, heading }: ListGroupProps) {
           </li>
         ))}
       </ul>
-    </Fragment>
+    </>
   );
 }
 
