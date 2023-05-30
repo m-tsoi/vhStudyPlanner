@@ -1,6 +1,7 @@
-import Message from "./Message";
-import ListGroup from "./components/ListGroup";
-import TestButton from "./components/TestButton";
+import TimerCircle from "./components/TimerCircle";
+import Timer from "./components/Timer";
+import "tailwindcss/tailwind.css";
+import "./App.css";
 
 function App() {
   const items = ["a", "b", "c", "d"];
@@ -11,11 +12,12 @@ function App() {
 
   return (
     <div>
-      <Message />
-      <ListGroup items={items} heading="AAAA" onSelectItem={handleSelectItem} />
-      <TestButton color="secondary" onClick={() => console.log("Clicked")}>
-        buttonName
-      </TestButton>
+      <h1>
+        <b>AMONGUSAMONGUSAMONGUSAMONGUSAMONGUSAMONGUSAMONGUS</b>
+        <p className="bg-red-500">BRUUHHHZHZZZZZZZ SUSSSSYYY!!!!!!!</p>
+      </h1>
+      <TimerCircle />
+      <Timer />
     </div>
   );
 }
